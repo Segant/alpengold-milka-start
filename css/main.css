@@ -303,7 +303,6 @@ body {
     font-family: 'DINPro';
     src: url('../fonts/DINPro-Regular.eot');
     src: url('../fonts/DINPro-Regular.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/DINPro-Regular.woff2') format('woff2'),
         url('../fonts/DINPro-Regular.woff') format('woff'),
         url('../fonts/DINPro-Regular.ttf') format('truetype'),
         url('../fonts/DINPro-Regular.svg#DINPro-Regular') format('svg');
@@ -315,7 +314,6 @@ body {
     font-family: 'DINPro';
     src: url('../fonts/DINPro-Medium.eot');
     src: url('../fonts/DINPro-Medium.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/DINPro-Medium.woff2') format('woff2'),
         url('../fonts/DINPro-Medium.woff') format('woff'),
         url('../fonts/DINPro-Medium.ttf') format('truetype'),
         url('../fonts/DINPro-Medium.svg#DINPro-Medium') format('svg');
@@ -327,7 +325,6 @@ body {
     font-family: 'DINPro';
     src: url('../fonts/DINPro-Bold.eot');
     src: url('../fonts/DINPro-Bold.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/DINPro-Bold.woff2') format('woff2'),
         url('../fonts/DINPro-Bold.woff') format('woff'),
         url('../fonts/DINPro-Bold.ttf') format('truetype'),
         url('../fonts/DINPro-Bold.svg#DINPro-Bold') format('svg');
@@ -351,7 +348,6 @@ body {
     font-family: 'Futura New';
     src: url('../fonts/FuturaNewBold.eot');
     src: url('../fonts/FuturaNewBold.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/FuturaNewBold.woff2') format('woff2'),
         url('../fonts/FuturaNewBold.woff') format('woff'),
         url('../fonts/FuturaNewBold.ttf') format('truetype'),
         url('../fonts/FuturaNewBold.svg#FuturaNewBold') format('svg');
