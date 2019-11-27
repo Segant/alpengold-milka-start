@@ -840,7 +840,7 @@ footer {
 		padding-top: 20px;
 	}
 	.promo__slogan--m {
-		max-width: 147px;
+		max-width: 130px;
 	}
 	.bg--m {
 	    background: linear-gradient(180deg, #776CB1 0%, rgba(119, 108, 177, 0) 50.57%);
@@ -853,7 +853,6 @@ footer {
 	    z-index: -2;
 	}
 	.promo__right .promo__desc {
-		max-width: 144px;
 		line-height: 18px;
 		margin-bottom: 110px;
 		text-shadow: 0px 0px 15px rgba(23, 2, 66, 0.33);
