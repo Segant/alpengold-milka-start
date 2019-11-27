@@ -374,10 +374,7 @@ body {
     overflow: hidden;
     transition: all .5s ease;
     text-align: center;
-    padding-top: 44px;
-}
-
-.promo__inner{
+    padding-top: 2.75rem;
 }
 
 .promo__left:hover,
@@ -385,7 +382,8 @@ body {
     width: 65%;
 }
 
-/* .promo__left::after{
+.promo__left::before,
+.promo__right::before{
     content: '';
     position: absolute;
     left: 0;
@@ -394,12 +392,21 @@ body {
     top: 0;
     opacity: 0;
     transition: all .5s ease;
-} */
+} 
 
-/* .promo__right:hover .promo__left::after {
+.promo__left.blur::before {
     background: rgba(228, 176, 47, 0.8);
     backdrop-filter: blur(10px);
-} */
+    opacity: 1;
+    z-index: 100;
+}
+
+.promo__right.blur::before {
+    background: rgba(119, 108, 177, 0.8);
+    backdrop-filter: blur(10px);
+    opacity: 1;
+    z-index: 100;
+}
 
 /* .promo__left{
     background: linear-gradient(360deg, #84B9D7 12.19%, #2E4674 67.81%);
@@ -410,45 +417,45 @@ body {
 } */
 
 .logo{
-    margin-bottom: 18px;
+    margin-bottom: 1.125rem;
 }
 
 .logo--ag{
-    max-width: 128px;
+    max-width: 8rem;
     width: 100%;
 }
 
 .logo--m{
-    max-width: 133px;
+    max-width: 8.3125rem;
     width: 100%;
-    padding-top: 30px;
+    padding-top: 1.875rem;
     margin-bottom: 0;
 }
 
 .promo__slogan{
     font-family: 'Nexa Script';
-    max-width: 270px;
-    font-size: 55px;
-    line-height: 42px;
-    margin-bottom: 42px;
+    max-width: 16.875rem;
+    font-size: 3.4375rem;
+    line-height: 2.625rem;
+    margin-bottom: 2.625rem;
 }
 
 .promo__slogan--m{
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
 }
 
 .promo__desc{
     font-weight: 500;
-    font-size: 21px;
-    line-height: 26px;
-    margin-bottom: 42px;
+    font-size: 1.3125rem;
+    line-height: 1.625rem;
+    margin-bottom: 2.625rem;
 }
 
 .btn{
     width: 100%;
-    max-width: 240px;
-    font-size: 18px;
-    line-height: 23px;
+    max-width: 15rem;
+    font-size: 1.125rem;
+    line-height: 1.4375rem;
     text-transform: uppercase;
     font-family: 'Futura New';
     font-weight: bold;
@@ -480,28 +487,27 @@ body {
 }
 
 .line-dec{
-    width: 1920px;
-    height: 180px;
+    /*width: 1920px;*/
+    width: 100%;
+    height: 11.25rem;
     position: absolute;
     bottom: 0;
     background-repeat: repeat-x;
     z-index: 10;
-    /* background-size: 100%;  */
-    
 }
 
 .line-dec--ag{
     background-image: url('../img/b-dec-ag.svg');
     left: 0;
     background-position: left;
-    bottom: -19px;
+    bottom: -1.1875rem;
 }
 
 .line-dec--m {
     background-image: url('../img/b-dec-m.svg');
     right: 0;
     background-position: right;
-        bottom: -19px;    bottom: -19px;
+    bottom: -1.1875rem;
 }
 
 .snow{
@@ -510,18 +516,17 @@ body {
     height: 100%;
     background: url('../img/snow.png') center;
     opacity: .7;
-    top: -44px;
+    top: -2.75rem;
     z-index: -1;
 }
 
 .bg{
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        right: 0;
-        left: 0;
-        z-index: -1;
-        
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: -1;     
 }
 
 .bg--ag{
@@ -533,70 +538,74 @@ body {
 }
 
 .miner{
-    max-width: 370px;
+    max-width: 23.125rem;
     position: absolute;
-    bottom: 70px;
+    bottom: 4.375rem;
     left: 0;
     right: 0;
     margin: auto;
-    transform: translateX(105px);
+    transform: translateX(6.5625rem);
     z-index: 1;
 
 }
 
 .tree{
     position: absolute;
-    bottom: -190px;
-    right: -115px;
-    max-width: 700px;
+    bottom: -11.875rem;
+    right: -7.1875rem;
+    max-width: 43.75rem;
 }
 
 .gold{
     position: absolute;
-    max-width: 260px;
-    bottom: 40px;
+    max-width: 16.25rem;
+    bottom: 2.5rem;
     z-index: 15;
-    transform: translateX(-100px);
+    transform: translateX(-6.25rem);
 }
 
 .mounts-ag{
     position: absolute;
-    bottom: 40px;
+    bottom: 2.5rem;
     left: 0;
 }
 
 .gold-mount{
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        max-width: 780px;
-        z-index: -1;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    max-width: 48.75rem;
+    z-index: -1;
 }
 
 .choc{
     position: absolute;
     left: 0;
     bottom: 0;
-    max-width: 250px;
+    max-width: 15.625rem;
     z-index: 15;
-    left: 37px;
-    bottom: 50px;
+    left: 2.3125rem;
+    bottom: 3.125rem;
 }
 
 .warn{
     position: absolute;
-    bottom: 12px;
+    bottom: 0.75rem;
     left: 0;
     right: 0;
     margin: auto;
     z-index: 15;
-    font-size: 10px;
-    line-height: 12px;
+    font-size: 0.625rem;
+    line-height: 0.75rem;
     text-align: center;
-    max-width: 600px;;
+    max-width: 37.5rem;
     color: #85312C;
-    /* width: 70%; */
     opacity: 0.8;
+}
+
+.warn a {
+	font-weight: bold;
+	text-decoration: underline;
 }
 
 .warn--m{
@@ -607,52 +616,280 @@ body {
     position: absolute;
     bottom: 0;
     left: 0;
+    width: 1090px;
+    height: 1088px;
+    background: url(../img/mounts-m.png) center no-repeat;
+    background-size: 1090px 1088px;
+    z-index: -1;
 }
 
 .main-pr{
     position: absolute;
-    left: 0;
-    bottom: 0;
+    left: 5.5625rem;
+    bottom: 17.1875rem;
     z-index: 15;
-    left: 89px;
-    bottom: 275px;
-    max-width: 160px;
+    max-width: 10rem;
 }
 
 .girl{
     position: absolute;
-    max-width: 360px;
+    max-width: 22.5rem;
     right: 0;
-    bottom: 100px;
+    bottom: 6.25rem;
 }
 
 .men-m{
     position: absolute;
-    max-width: 251px;
-    right: 284px;
-    bottom: 194px;
+    max-width: 15.6875rem;
+    right: 17.75rem;
+    bottom: 12.125rem;
     z-index: -1;
 }
 
-.control-wrap{
-    position: absolute;
-    width: 50%;
-    height: 100vh;
-    left: 0;
+.choice {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	width: 190px;
+	height: 190px;
+	background: url(../img/choice.svg) center no-repeat;
+	background-size: cover;
+	z-index: 101;
+    transition: all .5s ease;
 }
 
-/* .control-wrap:hover{
-    width: 65%;
-    z-index: 1;
-} */
+.choice.left {
+	left: -13%;
+}
 
-.control{
-        background: linear-gradient(89.45deg, #2E4673 20.23%, #776CB1 74.45%);
-        border-radius: 100%;
-        width: 190px;
-        height: 190px;
-        top: 36%;
-        right: 0;
-        transform: translate(50%, -50%);
-        position: absolute;
+.choice.right {
+	left: 13%;
+}
+
+footer {
+	height: 100px;
+	padding: 20px 0;
+}
+
+.footer-wrap {
+	display: flex;
+	justify-content: center;
+}
+
+.footer-link {
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 18px;
+	text-align: center;
+	color: #4D1D85;
+	padding: 10px 0;
+}
+
+.footer-link:hover {
+	color: #4D1D85;
+	text-decoration: underline;
+}
+
+.mndlz-wrap {
+    margin: 0 70px 10px;
+}
+
+.copyright {
+	font-size: 8px;
+	line-height: 10px;
+	color: #4D1D85;
+	text-align: center;
+}
+
+.mob {
+	display: none;
+}
+
+@media (min-width: 1000px) and (max-height: 850px) {
+	/*.logo--ag {
+	    max-width: calc(128px * 0.9);
+	}
+	.logo--m {
+		max-width: calc(133px * 0.9);
+	}*/
+	html {
+		font-size: 15px;
+	}
+}
+
+@media (min-width: 1000px) and (max-height: 820px) {
+	html {
+		font-size: 14px;
+	}
+}
+
+@media (min-width: 1000px) and (max-height: 770px) {
+	html {
+		font-size: 13px;
+	}
+}
+
+@media (min-width: 1000px) and (max-height: 720px) {
+	html {
+		font-size: 12px;
+	}
+}
+
+@media (max-width: 1280px) {
+	.line-dec {
+	    height: 9.375rem;
+	}
+	.miner {
+		bottom: 3.75rem;
+	}
+}
+
+@media (max-width: 1000px) {
+	.desk {
+		display: none;
+	}
+	.mob {
+		display: block;
+	}
+	.promo {
+	    flex-direction: column;
+	}
+	.promo__left,
+	.promo__right,
+	.promo__left:hover, 
+	.promo__right:hover {
+		width: 100%;
+	}
+	.promo__left,
+	.promo__right {
+		padding-top: 15px;
+	}
+	.promo__left {
+		height: 400px;
+	}
+	.promo__right {
+		height: 386px;
+	}
+	.choice {
+	    width: 309px;
+	    height: 27px;
+	    background: url(../img/choice-mob.svg) center no-repeat;
+	    top: 390px;
+    	bottom: auto;
+	}
+	.line-dec {
+		display: none;
+	}
+	.logo--ag {
+		max-width: 56px;
+		margin-bottom: 0;
+	}
+	.promo__slogan {
+		max-width: 290px;
+    	font-size: 30px;
+    	margin-bottom: 0;
+	}
+	.promo__desc {
+		font-size: 14px;
+	}
+	.promo__left .promo__desc {
+		margin-bottom: 170px;
+	}
+	.gold-mount {
+		max-width: 370px;
+    	left: -50px;
+	}
+	.gold {
+		max-width: 111px;
+		bottom: 105px;
+    	transform: translateX(-60px);
+	}
+	.miner {
+		max-width: 146px;
+		bottom: 85px;
+		transform: translateX(25px);
+	}
+	.tree {
+	    bottom: -40px;
+	    right: 0;
+	    max-width: 234px;
+	}
+	.mounts-ag {
+	    bottom: 0;
+	    left: 0;
+	    z-index: 1;
+	    width: 100%;
+	    height: 206px;
+	    background: url(../img/m-ag-mob.png) center 50px no-repeat;
+	    background-size: 1000px 206px;
+	}
+	.btn {
+	    max-width: 182px;
+	    font-size: 14px;
+	    line-height: 14px;
+	}
+	.warn {
+		bottom: 25px;
+		font-size: 6px;
+    	line-height: 7px;
+	}
+	.logo--m {
+		max-width: 72px;
+		padding-top: 20px;
+	}
+	.promo__slogan--m {
+		max-width: 147px;
+	}
+	.mounts-m {
+	    width: 100%;
+	    height: 386px;
+	    background: url(../img/mounts-m.png) center no-repeat;
+	    background-size: cover;
+	}
+	.promo__right .promo__desc {
+		max-width: 144px;
+		line-height: 18px;
+		margin-bottom: 110px;
+	}
+	.promo__right .warn {
+		color: #4D1D85;
+	    bottom: 10px;
+	}
+	.girl {
+	    max-width: 138px;
+	    right: -40px;
+	    bottom: 40px;
+	}
+	.men-m {
+	    max-width: 130px;
+	    right: 40px;
+	    bottom: 60px;
+	}
+	.main-pr {
+	    left: 25px;
+	    bottom: 90px;
+	    max-width: 82px;
+	}
+	footer {
+		padding: 5px 0 15px;
+    	height: auto;
+	}
+	.footer-wrap {
+		flex-direction: column;
+	}
+	.footer-link {
+		font-size: 10px;
+    	line-height: 10px;
+	}
+	.mndlz-wrap {
+        margin: 20px auto 10px;
+	    order: 1;
+	}
+	.copyright {
+		max-width: 224px;
+		margin: auto;
+	}
 }
