@@ -450,6 +450,7 @@ body {
     font-size: 1.3125rem;
     line-height: 1.625rem;
     margin-bottom: 2.625rem;
+    z-index: 1;
 }
 
 .btn{
