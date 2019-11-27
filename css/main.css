@@ -728,7 +728,7 @@ footer {
 	}
 }
 
-@media (min-width: 1000px) and (max-height: 720px) {
+@media (min-width: 1000px) and (max-height: 730px) {
 	html {
 		font-size: 12px;
 	}
@@ -740,6 +740,12 @@ footer {
 	}
 	.miner {
 		bottom: 3.75rem;
+	}
+}
+
+@media (max-width: 1100px) {
+	.miner {
+		bottom: 3.125rem;
 	}
 }
 
