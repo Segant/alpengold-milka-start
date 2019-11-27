@@ -742,9 +742,6 @@ footer {
 }
 
 @media (max-width: 2560px) and (min-width: 2500px) {
-    .line-dec {
-        height: 9.375rem;
-    }
     .miner {
         bottom: 3.125rem;
     }
